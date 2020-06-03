@@ -34,24 +34,6 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        message: "The FitnessGram Pacer Test is a multistage " + 
-        "aerobic capacity test that gets progressively more " +
-        "difficult as it continues.",
-        title: 'Help',
-        name: 'Jonathan Shaw'
-    })
-})
-
-app.get('/help/*', (req, res) => {
-    res.render('error404', {
-        title: 'Error 404',
-        message: 'Help article not found!',
-        name: 'Jonathan Shaw'
-    })
-})
-
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
