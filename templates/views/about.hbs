@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Simple Weather | About</title>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <figure>
+                <img src="/img/me.jpg" class="portrait">
+                <figcaption>Look at this handsome stud!  He made this weather application.</figcaption>
+            </figure>
+            <p class="about-paragraph">This application uses the Mapbox API to geocode the provided address.  Once the address has been resolved to latitude/longitude coordinates, it uses the WeatherStack API to receive the current weather data.  The application was built for <a href="https://www.udemy.com/course/the-complete-nodejs-developer-course-2/">Andrew Mead's Node.js course on Udemy</a>.</p>
+        </div>
+        {{>footer}}
+    </body>
+</html>
