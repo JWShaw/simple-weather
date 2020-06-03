@@ -83,3 +83,9 @@ button:hover {
 .about-paragraph {
     text-align: left;
 }
+
+.main-footer-container {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
